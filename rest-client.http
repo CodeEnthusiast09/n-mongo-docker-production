@@ -1,0 +1,40 @@
+### CREATE SONG REQUEST
+
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "Alaska",
+  "artist": ["Seyi vines"],
+  "releasedDate" : "2023-05-11",
+  "duration": 196,
+  "lyrics": "I don't know why I can't quite get you out my sight You're always just behind"
+}
+
+### FETCH ALL SONGS REQUEST
+
+GET http://localhost:3000/songs
+
+
+### Find SONGS BY ID REQUEST
+GET http://localhost:3000/songs/
+
+
+### CREATE ALBUM REQUEST
+
+POST http://localhost:3000/albums
+Content-Type: application/json
+
+{
+  "title": "Shakur",
+  "artist": ["T.I Blaze"],
+  "releasedDate" : "2023-05-11",
+  "duration": 1440,
+  "songs": ["680a80b8ddadd0693e4ce8b5", "680a8c8f2dd0101639e8efd2"]
+}
+
+
+### FIND ALL ALBUMs REQUEST
+
+GET http://localhost:3000/albums
+Content-Type: application/json
